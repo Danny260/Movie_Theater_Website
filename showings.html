@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <title>Theater Website</title>
+        <script src="./showings.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="theater_logo.png" alt="Theater Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">See A Movie</a></li> <!--Home page with movies available-->
+                    <!-- need to add "purchase tickets webpage and then redirects to the seat"-->
+                    <li><a href="./seat_booking/tickets.html">Purchase Tickets</a></li> <!--Collection of movies with showtimes and purchasing tickets-->
+                    <li><a href="about.html">Our Theater</a></li> <!--About our theater-->
+                    <li><a href="contact.html">Contact Us</a></li> <!--Contact information-->
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <label>Pick a movie</label>
+
+            <select id="movie" onchange="handleSelection()">
+                <option value="1">127 Hours ($10)</option>
+                <option value="2">Avengers ($12)</option>
+                <option value="3">Oppenheimer ($15)</option>
+                <option value="4">Shrek ($8)</option>
+                <option value="5">World War Z ($6)</option>
+            </select>
+            <section class="movie-container">
+                <div class="showings">
+                    <div id="poster">
+                        <img src="./movie_posters/127_hours_poster.jpg" id="posterFile">
+                    </div>    
+                        <h3 id="movName">127 Hours</h3>
+                        <p>Show Times:</p>
+                        <ul>
+                            <li>Regular: <a href='./seat_booking/tickets.html?movie=1&time=100&type=norm' id="regTime1">1:00 PM</a>, <a href='./seat_booking/tickets.html?movie=1&time=400&type=norm' id="regTime2">4:00 PM</a>, <a href='./seat_booking/tickets.html?movie=1&time=700&type=norm' id="regTime3">7:00 PM</a></li>
+                            <li>IMAX: <a href='./seat_booking/tickets.html?movie=1&time=200&type=imax' id="imaxTime1">2:00 PM</a>, <a href='./seat_booking/tickets.html?movie=1&time=500&type=imax' id="imaxTime2">5:00 PM</a>, <a href='./seat_booking/tickets.html?movie=1&time=800&type=imax' id="imaxTime3">8:00 PM</a></li>
+                        </ul>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+           
+        </footer>
+
+    </body>
+    </html>
+    

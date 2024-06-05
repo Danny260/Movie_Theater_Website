@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Theater Website</title>
+<html>
+    <body>
+        <header>
+            <img src="theater_logo.png" alt="Theater Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">See A Movie</a></li> <!--Home page with movies available-->
+                    <!-- need to add "purchase tickets webpage and then redirects to the seat"-->
+                    <li><a href="showings.html">Purchase Tickets</a></li> <!--Collection of movies with showtimes and purchasing tickets-->
+                    <li><a href="about.html">Our Theater</a></li> <!--About our theater-->
+                    <li><a href="contact.html">Contact Us</a></li> <!--Contact information-->
+                </ul>
+            </nav>
+        </header>
+<body>
+    <h2>Fill out the form below and tell us about your experience:</h2>
+    <div id="form">
+        <p> <a href="experience.docx">Please fill out this form!</a> </p>        
+    </div>
+    <br>
+        <label for="myfile">Upload your experience</form>:</label>
+  <input type="file" id="myfile" name="myfile">
+  <br>
+  <br>
+  <p>
+    <input type="submit" name="Submit" value="Submit" >
+  </p>
+  </form>
+
+    <div class="Career Opportunity">
+        <h3>Career Opportunity:</h3>
+        <form action="apply page.php">
+        <label for="fname">Full name:</label>
+  <input type="text" id="fname" name="fname" required>
+  <br>
+        <label for="email">Email Address:</label>
+  <input type="email" placeholder="email@domain.com" required>
+  <br>
+        <label for="phone number">Phone:</label>
+  <input type="tel" placeholder="(###)-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+  <br>
+        <label for="lname">Tell us about yourself:</label>
+        <textarea name="summary" rows="6" cols="35">Max: 200 words</textarea>
+  
+  <br>
+        <label for="myfile">Upload a resume:</label>
+  <input type="file" id="myfile" name="myfile">
+  <br>
+  <br>
+  <p>
+    <input type="submit" name="Submit" value="Submit" >
+  </p>
+  </form>
+      </div>
+</body>
+</html>
